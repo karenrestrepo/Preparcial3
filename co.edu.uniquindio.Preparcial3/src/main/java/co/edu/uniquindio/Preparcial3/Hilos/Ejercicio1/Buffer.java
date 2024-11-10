@@ -1,61 +1,54 @@
 package co.edu.uniquindio.Preparcial3.Hilos.Ejercicio1;
 
 public class Buffer {
-	
-	private char buffer[] = new char[6];
+
+	private char[] buffer = new char[12];
 	private int siguiente = 0;
-	// Flags para saber el estado del buffer
 	private boolean estaLlena = false;
 	private boolean estaVacia = true;
 
-	// M�todo para retirar letras del buffer
-	public synchronized char recoger() 
-	{
-		// No se puede consumir si el buffer est� vac�o
-		while( estaVacia == true )
-		{
+	public synchronized char[] recogerDos() {
+		while (estaVacia || siguiente < 2) {
 			try {
-				wait(); // Se sale cuando estaVacia cambia a false
-			} catch( InterruptedException e ) {
-				;
+				wait();
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
 			}
 		}
-		// Decrementa la cuenta, ya que va a consumir una letra
-		siguiente--;
-		// Comprueba si se retir� la �ltima letra
-		if( siguiente == 0 )
+
+		char[] caracteres = new char[2];
+		siguiente -= 2;
+		caracteres[0] = buffer[siguiente];
+		caracteres[1] = buffer[siguiente + 1];
+
+		if (siguiente == 0) {
 			estaVacia = true;
-		// El buffer no puede estar lleno, porque acabamos
-		// de consumir
+		}
 		estaLlena = false;
 		notify();
-
-		// Devuelve la letra al thread consumidor
-		return( buffer[siguiente] );
+		return caracteres;
 	}
-	
-	
 
-	// M�todo para a�adir letras al buffer
-	public synchronized void lanzar( char c ) 
-	{
-		// Espera hasta que haya sitio para otra letra
-		while( estaLlena == true )
-		{
+	public synchronized void lanzar(char c) {
+		while (estaLlena) {
 			try {
-				wait(); // Se sale cuando estaLlena cambia a false
-			} catch( InterruptedException e ) {
-				;
+				wait();
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
 			}
 		}
-		// A�ade una letra en el primer lugar disponible
+
 		buffer[siguiente] = c;
-		// Cambia al siguiente lugar disponible
 		siguiente++;
-		// Comprueba si el buffer est� lleno
-		if( siguiente == 6 )
+
+		if (siguiente == 12) {
 			estaLlena = true;
+		}
 		estaVacia = false;
 		notify();
+	}
+
+	public boolean estaVacia() {
+		return estaVacia;
 	}
 }
