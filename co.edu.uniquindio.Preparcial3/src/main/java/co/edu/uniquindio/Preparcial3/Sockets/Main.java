@@ -1,4 +1,4 @@
-package co.edu.uniquindio.Preparcial3;
+package co.edu.uniquindio.Preparcial3.Sockets;
 
 public class Main {
     public static void main(String[] args) {
