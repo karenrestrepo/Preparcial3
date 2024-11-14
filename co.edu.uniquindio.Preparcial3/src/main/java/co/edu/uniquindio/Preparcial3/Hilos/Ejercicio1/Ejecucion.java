@@ -1,8 +1,9 @@
 package co.edu.uniquindio.Preparcial3.Hilos.Ejercicio1;
 
 public class Ejecucion {
-
 	public static void main(String[] args) {
+
+
 		Buffer buffer = new Buffer();
 
 		// Crear los productores con sus respectivos filtros
@@ -25,12 +26,21 @@ public class Ejecucion {
 		p4.start();
 		consumidor.start();
 
-		Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-			p1.interrupt();
-			p2.interrupt();
-			p3.interrupt();
-			p4.interrupt();
-			consumidor.interrupt();
-		}));
+		try {
+			consumidor.join();
+			// Una vez que el consumidor termina, detenemos los productores
+			detenerHilos(p1, p2, p3, p4);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
+
+	private static void detenerHilos(Productor p1, Productor p2, Productor p3, Productor p4) {
+		p1.interrupt();
+		p2.interrupt();
+		p3.interrupt();
+		p4.interrupt();
+		System.out.println("Todos los hilos han sido detenidos.");
+	}
+
 }

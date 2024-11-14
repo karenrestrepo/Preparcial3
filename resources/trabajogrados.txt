@@ -1,0 +1,10 @@
+2024-03-15|Sistema de Gestión de Inventarios con IA|Implementación de un sistema de gestión de inventarios utilizando técnicas de inteligencia artificial|1094567890@1094567891
+2024-03-10|Aplicación IoT para Agricultura|Desarrollo de una aplicación IoT para monitoreo y control de cultivos|1094567892@1094567893
+2024-02-28|Sistema de Reconocimiento Facial|Sistema de seguridad basado en reconocimiento facial usando deep learning|1094567894@1094567895
+2024-02-15|Plataforma E-learning Adaptativa|Desarrollo de una plataforma e-learning con contenido adaptativo|1094567896@1094567897
+2024-01-30|App Móvil de Telemedicina|Aplicación móvil para consultas médicas remotas|1094567898@1094567899
+2024-01-15|Sistema de Domótica|Sistema de automatización para hogares inteligentes|1094567900@1094567901
+2023-12-20|Blockchain para Trazabilidad|Sistema de trazabilidad de productos usando blockchain|1094567902@1094567903
+2023-12-05|Videojuego Educativo|Desarrollo de un videojuego para el aprendizaje de matemáticas|1094567904@1094567905
+2023-11-20|Sistema de Transporte Inteligente|Sistema de optimización de rutas para transporte público|1094567906@1094567907
+2023-11-05|App de Realidad Aumentada|Aplicación de realidad aumentada para turismo|1094567908@1094567909

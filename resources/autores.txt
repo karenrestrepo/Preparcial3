@@ -1,0 +1,20 @@
+Juan|García|1094567890|Ingeniería de Sistemas|Ingeniero de Sistemas
+María|López|1094567891|Ingeniería de Sistemas|Ingeniera de Sistemas
+Carlos|Martínez|1094567892|Ingeniería de Software|Ingeniero de Software
+Ana|Rodríguez|1094567893|Ingeniería de Software|Ingeniera de Software
+David|Sánchez|1094567894|Ingeniería Electrónica|Ingeniero Electrónico
+Laura|Pérez|1094567895|Ingeniería Electrónica|Ingeniera Electrónica
+Pedro|González|1094567896|Ingeniería de Sistemas|Ingeniero de Sistemas
+Sofia|Ramírez|1094567897|Ingeniería de Software|Ingeniera de Software
+Diego|Torres|1094567898|Ingeniería de Sistemas|Ingeniero de Sistemas
+Andrea|Herrera|1094567899|Ingeniería de Software|Ingeniera de Software
+Luis|Díaz|1094567900|Ingeniería Electrónica|Ingeniero Electrónico
+Carmen|Vargas|1094567901|Ingeniería de Sistemas|Ingeniera de Sistemas
+Miguel|Castro|1094567902|Ingeniería de Software|Ingeniero de Software
+Paula|Morales|1094567903|Ingeniería Electrónica|Ingeniera Electrónica
+Jorge|Jiménez|1094567904|Ingeniería de Sistemas|Ingeniero de Sistemas
+Valentina|Ortiz|1094567905|Ingeniería de Software|Ingeniera de Software
+Ricardo|Medina|1094567906|Ingeniería Electrónica|Ingeniero Electrónico
+Diana|Cruz|1094567907|Ingeniería de Sistemas|Ingeniera de Sistemas
+Fernando|Rojas|1094567908|Ingeniería de Software|Ingeniero de Software
+Carolina|Silva|1094567909|Ingeniería Electrónica|Ingeniera Electrónica

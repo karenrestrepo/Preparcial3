@@ -36,11 +36,12 @@ public class Consumidor extends Thread {
 			}
 		}
 
-		System.out.println("Palabra formada: " + PALABRA_OBJETIVO);
-		System.out.println("Letras no usadas: " + letrasNoUsadas);
-
-		guardarResultados();
-		registrarLog();
+		if (palabraCompleta()) {
+			System.out.println("Palabra formada: " + PALABRA_OBJETIVO);
+			System.out.println("Letras no usadas: " + letrasNoUsadas);
+			guardarResultados();
+			registrarLog();
+		}
 	}
 
 	private void procesarCaracter(char c) {
